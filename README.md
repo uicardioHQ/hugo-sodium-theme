@@ -1,4 +1,4 @@
-#Hugo Sodium
+# Hugo Sodium
 
 [Hugo sodium](https://uicard.io/products/hugo-sodium) theme is a responsive [Hugo](https://gohugo.io) theme built on the top of Bootstrap 4. It covers all the major component for a business website making itself a perfect option for a developed static website.
 
@@ -19,8 +19,10 @@ Components it includes:
 Hugo sodium theme is simple to add to your static workplace. 	 
 We also come with a pro version that contains many advance features. [Check it out too](https://demo.uicard.io/hugo-sodium-pro/).
 
-##Pro Version
+## Pro Version
 
 [Hugo Sodium Pro](https://uicard.io/products/hugo-sodium-pro) theme has more features like blog, portfolio, SASS files and documentation.
+
+## Useful Links
 
 [Documentation](https://demo.uicard.io/hugo-sodium-pro/documentation/) | [Free Version](https://uicard.io/products/hugo-sodium) | [Pro Version](https://uicard.io/products/hugo-sodium-pro)
