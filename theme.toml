@@ -3,11 +3,11 @@
 
 name = "Sodium"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
+licenselink = "https://github.com/uicardiodev/hugo-sodium-theme/blob/master/LICENSE.md"
+description = "Hugo Sodium Theme is minial, clean and responsive component theme"
+homepage = "https://uicard.io/products/hugo-sodium"
+tags = ["minimal","responsive","clean","modern","gradients","portfolio","blog"]
+features = ["blog","features","services","portfolio","contact","team"]
 min_version = "0.31.1"
 
 [author]
@@ -17,9 +17,3 @@ min_version = "0.31.1"
 [developer]
 	name = "Arvind"
 	homepage = "https://heyarviind.com"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
