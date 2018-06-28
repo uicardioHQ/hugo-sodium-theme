@@ -1,0 +1,18 @@
+{{ .Scratch.Set "navbarType" "transparent" }}
+
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+
+<!-- Loading the components -->
+{{ $globalData := . }}
+{{ $components := .Site.Data.config.components }}
+{{ range $components }}
+	{{ if gt (len $components) 0 }}
+		{{ partial ( printf "%s.html" .) $globalData }}
+	{{ else }}
+		<h3 class="text-center">Oops! There is no component registered in config.json file</h3>
+	{{ end }}
+{{ end }}
+
+{{ partial "footer.html" . }}
+{{ partial "footer-end.html" . }}

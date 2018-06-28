@@ -1,0 +1,273 @@
+@import "variables.scss";
+
+html{
+  
+  height: 100%;
+}
+
+body{
+
+  margin-top: 80px;
+}
+
+nav{
+  position: relative;
+  
+}
+
+.backdrop-blur{
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+}
+
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .backdrop-blur{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba($color: #fff, $alpha: .4);
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+  }
+}
+
+body{
+  background-color: #fff;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,strong{
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 700;
+}
+
+.pricing{
+  text-align: center;
+  display: block;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 20px 10px -13px #0000000f;
+  background-color: #fff;
+
+
+  span,div{
+    display: block;
+  }
+
+  .title{
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .price{
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .features{
+    font-size: 14px;
+  }
+
+  .btn-dark{
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    border: none;
+  }
+}
+
+#team{
+  .members{
+    img{
+      border-radius: 80px;
+      height: 120px;
+      widows: 120px;
+
+    }
+  }
+}
+
+.features{
+  .icon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    border-radius: 100px;
+    color: #fff;
+  }
+
+  &:nth-of-type(1) .icon{
+    background: linear-gradient(to bottom right, #32d6fb 0%, #5558ed 100%);
+    box-shadow: 0 8px 10px lighten(#32d6fb, 20%);
+  }
+
+  &:nth-of-type(2) .icon{
+    background: linear-gradient(to bottom right, #fc5f3c 0%, #ff55d3 100%);
+    box-shadow: 0 8px 10px lighten(#fc5f3c, 20%);
+    
+  }
+  &:nth-of-type(4) .icon{
+    background: linear-gradient(to bottom right, #1cf196 0%, #36a6bf 100%);
+    box-shadow: 0 8px 10px lighten(#1cf196, 20%);
+  }
+  &:nth-of-type(3) .icon{
+    background: linear-gradient(to bottom right, #fad470 0%, #f96933 100%);
+    box-shadow: 0 8px 10px lighten(#fad470, 20%);
+  }
+}
+
+#footer{
+  border-top: solid 1px $gray-200;
+  
+  a{
+    color: rgba(0,0,0,0.5);
+  }
+}
+
+// Styles for blog
+article{
+  color: #2b2b2b;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: .1px;
+
+  h1,h2,h3,.h3,h4,h5,h6,blockquote,ul,ol,a,.disqus, a:not(.btn){
+    text-align: left;
+    margin: 30px auto 20px auto;
+    max-width: 740px;
+
+    a{
+      color: #2b2b2b;
+    }
+  }
+
+  li{
+    margin-top: 20px;
+  }
+
+
+  .share{
+    border-top: solid 1px #ededed;
+    border-bottom: solid 1px #ededed;
+
+    .btn-facebook{
+      background-color: #4266b2;
+      color: #fff;
+    }
+
+    .btn-twitter{
+      background-color: #54acee;
+      color: #fff;
+    }
+
+    i{
+      margin-right: 20px;
+    }
+  }
+
+  blockquote{
+    color: rgba(0,0,0,0.4);
+    font-size: 30px;
+    padding: 30px;
+    font-style: italic;
+    line-height: 40px;
+  }
+
+  h2.heading{
+    a{
+      color: #2b2b2b;
+    } 
+  }
+  img{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  p{
+    max-width: 740px;
+    // padding: 0 20px;
+    margin: 12px auto 12px auto;
+    text-align: left;
+  }
+}
+
+
+// Styles for work portfolio
+.overlay{
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  // z-index of 1020 is of bootstrap navbar
+  z-index: 1031;
+  opacity: 0;
+  display: none;
+  
+  transition: all 0.3s ease;
+
+  &.active{
+    opacity: 1;
+    display: block;
+  }
+}
+
+.workImage{
+  img{
+    border-radius: $border-radius;
+  }
+  
+}
+
+.hoverImage{
+  position: fixed;
+  z-index: 1032;
+  opacity: 0;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%) scale(1.3);
+  
+  transition: all 0.3s ease;
+
+  img{
+    max-width: 80%;
+  }
+
+  .cross{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .textHolder{
+    // position: absolute;
+    bottom: 0px; left: 0px;
+    background-color: black;
+    color: #fff;
+    // transform: translate(50%);  
+    opacity: 0;  
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+  }
+
+  &.active{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+
+    .textHolder{
+      opacity: 1;
+    }
+  }
+}
+
+.blogFI{
+  height: 146px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
+}

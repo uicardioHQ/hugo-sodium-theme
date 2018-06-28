@@ -1,0 +1,31 @@
+{{ $pricing := .Site.Data.pricing }}
+<section id="pricing" class="py-5">
+  <div class="container text-center">
+    <h2 class="pt-5 h2">{{ $pricing.title }}</h2>
+    <p class="text-muted pb-5">{{ $pricing.description }}</p>
+    <div class="row justify-content-md-center">
+      {{ range $pricing.content }}
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="pricing p-4">
+              <h5 class="h5 title">{{ .title }}</h5>
+              <span class="price my-3">{{ .price }}</span>
+              <hr>
+              <div class="features text-left">
+                  {{ range .features }}
+                    <div class="my-2 text-muted"><i class="fa fa-check mr-3 text-success"></i>{{ . }}</div>
+                  {{ end }}
+              </div>
+              <a href="{{ .button.href | absURL }}" class="btn btn-outline-dark mt-4">{{ .button.text }}</a>
+            </div>
+        </div>
+      {{ end }}
+    </div>
+    
+  </div>
+</section>
+
+<style type="text/css">
+  #pricing{
+    background: linear-gradient(165deg, #ffffff 0%,#ffffff 45%,#fc5f3c 45%,#ff55d3 90%, #ffffff 90%, #ffffff 100%);
+  }
+</style>

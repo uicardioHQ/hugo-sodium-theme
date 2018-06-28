@@ -1,0 +1,12 @@
+{
+  "components" : [
+    "cover",
+    "features",
+    "pricing",
+    "team",
+    "contact"
+  ],
+  "email" : "xxxxxxx@gmail.com",
+  "googleAnalytics" : "UA-114708351-1",
+  "disqusShortname" : "arvindhacker"
+}

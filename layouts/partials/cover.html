@@ -1,0 +1,41 @@
+{{ $cover := .Site.Data.cover }}
+
+<section class="cover p-lg-5 p-md-5 p-3">
+  <div class="container h-100">
+    <div class="d-flex h-100 align-items-center">
+      <div class="">
+          <h1 class="h1 text-light">{{ $cover.title }}</h1>
+          <p class="text-light sub-heading">{{ $cover.description }}</p>
+          <a href="{{ $cover.button.href }}" class="btn btn-outline-light">{{ $cover.button.text }}</a>      
+      </div>
+      <!-- <div class="col-12 col-lg-6 col-md-6 col-sm-12"> -->
+          <!-- <img src="/images/cover.svg" class="float-right" style="max-width: 100%"> -->
+      <!-- </div> -->
+    </div>
+    
+  </div>
+</section>
+
+<style type="text/css">
+  .cover{
+    margin-top: -80px;
+    height: 500px;
+    background: rgba(0,0,0,0.6);
+    background-image: url('{{.Site.BaseURL}}images/covers/{{$cover.image}}');
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)),  url('{{.Site.BaseURL}}images/covers/{{$cover.image}}');
+        background-position: center;
+        background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    /*animation: breath 25s ease-in-out infinite;*/
+  }
+
+  @keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 100% auto; }
+}
+  .cover .sub-heading{
+    opacity: .6;
+  } 
+</style>

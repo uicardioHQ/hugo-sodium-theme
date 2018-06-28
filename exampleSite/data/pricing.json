@@ -1,0 +1,33 @@
+{
+  "title" : "Pricing",
+  "description" : "Pricing subtitle",
+  "content" : [
+    {
+      "title" : "Starter",
+      "price" : "$30",
+      "features" : [
+        "No setup, monthly, or hidden fees",
+        "Pay only for what you use",
+        "Real-time fee reporting"
+      ],
+      "button" : {
+        "text" : "Contact",
+        "href" : "/#contact"
+      }
+    },
+    {
+      "title" : "Advance",
+      "price" : "$90",
+      "features" : [
+        "All features of Starter Pack",
+        "Feature number 2",
+        "Feature number 3",
+        "Feature number 4"
+      ],
+      "button" : {
+        "text" : "Contact",
+        "href" : "/#contact"
+      }
+    }
+  ]
+}

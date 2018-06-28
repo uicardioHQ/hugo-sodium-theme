@@ -1,0 +1,18 @@
+{{ $features := .Site.Data.features }}
+{{ $title := $features.title }}
+{{ $description := $features.description }}
+<section id="features" class="text-center py-5">
+  <div class="container">
+      <h2 class="pt-5 h2">{{ $title }}</h2>
+      <p class="text-muted pb-5">{{ $description }}</p>
+    <div class="row justify-content-md-center">
+      {{ range $features.content }}
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 features">
+          <div class="icon mb-4"><i class="fa fa-{{ .icon }}"></i></div>
+          <h4 class="h4">{{ .title }}</h4>
+          <p class="text-muted">{{ .description }}</p>
+        </div>
+      {{end}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+{{ $footer := .Site.Data.footer }}
+<section id="footer" class="py-3">
+  <div class="container">
+    <span class="text-muted">{{ $footer.footertext }}</span>
+    <span class="float-right">
+      {{ range $key, $value := .Site.Data.social }}
+        <a href="https://{{ $key }}.com/{{ $value }}" class="ml-2 btn-{{$key}}"><i class="fab fa-{{ $key }}"></i></a>
+      {{ end }}
+    </span>
+  </div>
+</section>

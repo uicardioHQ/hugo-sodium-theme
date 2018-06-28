@@ -1,0 +1,27 @@
+{{ $team := .Site.Data.team }}
+<section id="team" class="text-center py-5">
+  <div class="container">
+    <h2 class="pt-5 h2">{{ $team.title }}</h2>  
+    <p class="text-muted pb-5">{{ $team.description }}</p>
+
+    <div class="members row justify-content-md-center mt-5">
+      {{ range $team.members }}
+        <div class="col-3 col-lg-1 col-md-1 col-sm-2">
+          <img data-toggle="tooltip" title="{{ .name }}" class="mb-3 teamAvatar" src="{{.Site.BaseURL}}images/team/{{.avatar }}" alt="{{ .name }}">
+          <!-- <h4 class="h4">{{ .name }}</h4>
+          <div class="text-muted">{{ .description }}</div> -->
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<style type="text/css">
+  .teamAvatar{
+    border: solid 6px #fff;
+    transition: all 0.3s ease;
+  }
+  .teamAvatar:hover{
+    transform: scale(1.06);
+  }
+</style>

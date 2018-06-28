@@ -1,0 +1,21 @@
+{
+  "title" : "Our team is amazing",
+  "description" : "Our headquarter is located in Gurgaon",
+  "members" : [
+    {
+      "name" : "Avatar 1",
+      "description" : "CEO",
+      "avatar" : "dog1.jpg"
+    },
+    {
+      "name" : "Avatar 2",
+      "description" : "Content Writer",
+      "avatar" : "dog2.jpg"
+    },
+    {
+      "name" : "Avatar 3",
+      "description" : "CEO",
+      "avatar" : "dog3.jpg"
+    }
+  ]
+}

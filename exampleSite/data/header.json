@@ -1,0 +1,22 @@
+{
+  "brand" : "Sodium Theme",
+  "logo" : "logo-black.svg",
+  "links" : [
+    {
+      "title" : "Home",
+      "href" : ""
+    },
+    {
+      "title" : "Features",
+      "href" : "#features"
+    },
+    {
+      "title" : "Pricing",
+      "href" : "#pricing"
+    },
+    {
+      "title" : "Contact",
+      "href" : "#contact"
+    }
+  ]
+}
