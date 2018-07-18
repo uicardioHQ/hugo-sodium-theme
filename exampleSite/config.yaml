@@ -1,0 +1,19 @@
+baseURL : https://demo.uicard.io/hugo-sodium/
+languageCode : en-us
+title : Sodium
+theme : hugo-sodium-free
+
+taxonomies:
+  category: categories
+  tag: tags
+
+params:
+  social:
+    facebook: uicardio
+    instagram: uicardio
+    twitter: uicardio
+
+  scripts:
+    googleanalytics: 
+    disqus: 
+    
