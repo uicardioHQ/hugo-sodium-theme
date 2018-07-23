@@ -12,7 +12,7 @@ min_version = "0.31.1"
 
 [author]
   name = "UICardio"
-  homepage = "https://uicard.io/products/sodium-hugo-theme"
+  homepage = "https://uicard.io/products/hugo-sodium"
 
 [developer]
 	name = "Arvind"
