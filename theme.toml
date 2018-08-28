@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/uicardiodev/hugo-sodium-theme/blob/master/LICENSE.md"
 description = "Hugo Sodium Theme is minial, clean and responsive component theme"
 homepage = "https://uicard.io/products/hugo-sodium"
-tags = ["minimal","responsive","clean","modern","gradients","portfolio","blog"]
+tags = ["minimal","responsive","clean","modern","gradients","portfolio","blog","uicardio"]
 features = ["blog","features","services","portfolio","contact","team"]
 min_version = "0.31.1"
 
