@@ -55,19 +55,12 @@ $(document).ready(function(){
   });
 
   //Smooth scroll
-  $("a, button").click(function(event){
-    if($(this).attr('type') != 'submit'){
-      if(this.hash !== ""){
-        event.preventDefault();
-        var hash = this.hash;
-  
-        $("html, body").animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        })
-      }
-    }
+  $('a').click(function(){
+    var hash = $(this).attr('href').split('#')[1];
+    $('html, body').animate({
+        scrollTop: $('#' + hash).offset().top
+    }, 500);
+    return false;
   });
 
 
